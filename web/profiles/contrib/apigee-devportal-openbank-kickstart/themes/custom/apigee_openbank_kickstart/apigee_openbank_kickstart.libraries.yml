@@ -1,0 +1,28 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/apigee-openbank-kickstart.style.css: {}
+  js:
+    assets/js/apigee-openbank-kickstart.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+apigee-psu:
+  version: 1.x
+  js:
+    js/apigee-psu.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings 
+
+font.roboto:
+  version: VERSION
+  license:
+    name: 'Apache License 2.0'
+    url: https://github.com/google/roboto/blob/master/LICENSE
+    gpl-compatible: true
+  css:
+    base:
+      https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700: { external: true }

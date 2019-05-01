@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.apidoc.apidoc.field_categories
+    - field.field.apidoc.apidoc.field_image
+    - field.field.apidoc.apidoc.field_location
+    - field.field.apidoc.apidoc.field_meta_tags
+    - field.field.apidoc.apidoc.field_rating
+    - field.field.apidoc.apidoc.field_subscription_type
+  module:
+    - apigee_edge_apidocs
+    - options
+    - swagger_ui_formatter
+    - text
+    - votingapi_widgets
+id: apidoc.apidoc.default
+targetEntityType: apidoc
+bundle: apidoc
+mode: default
+content:
+  spec:
+    type: swagger_ui_file
+    weight: 0
+    region: content
+    label: above
+    settings:
+      validator: default
+      validator_url: ''
+      doc_expansion: list
+      show_top_bar: false
+      sort_tags_by_name: false
+      supported_submit_methods:
+        get: get
+        put: put
+        post: post
+        delete: delete
+        options: options
+        head: head
+        patch: patch
+    third_party_settings: {  }
+hidden:
+  api_product: true
+  field_categories: true
+  field_image: true
+  field_meta_tags: true
+  name: true

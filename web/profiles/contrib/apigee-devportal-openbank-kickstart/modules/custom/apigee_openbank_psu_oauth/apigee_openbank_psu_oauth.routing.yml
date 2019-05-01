@@ -1,0 +1,25 @@
+apigee_openbank_psu_oauth.open_bank_settings:
+  path: '/admin/config/apigee-edge/openbanksettings'
+  defaults:
+    _form: '\Drupal\apigee_openbank_psu_oauth\Form\OpenBankSettings'
+    _title: 'Open Bank Settings'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+apigee_openbank_psu_oauth.get_jwt:
+  path: '/apigee-openbank-psu-oauth/get-jwt'
+  defaults:
+    _controller: '\Drupal\apigee_openbank_psu_oauth\Controller\PSUOAuth2JWTController::getJWT'
+    _title: 'Get JWT'
+  requirements:
+    _permission: 'access content'
+
+apigee_openbank_psu_oauth.oauth2_callback:
+  path: '/oauth2-callback/{scope}'
+  defaults:
+    _controller: '\Drupal\apigee_openbank_psu_oauth\Controller\PSUOAuth2CallbackController::callback'
+    _title: 'OAuth2 Callback'
+  requirements:
+    _permission: 'access content'

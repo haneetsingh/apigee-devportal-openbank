@@ -1,0 +1,13 @@
+diff --git a/themes/custom/apigee_openbank_kickstart/webpack.mix.js b/themes/custom/apigee_openbank_kickstart/webpack.mix.js
+index 5a7df92..64a69a4 100644
+--- a/themes/custom/apigee_openbank_kickstart/webpack.mix.js
++++ b/themes/custom/apigee_openbank_kickstart/webpack.mix.js
+@@ -7,7 +7,7 @@
+  | for your application. See https://github.com/JeffreyWay/laravel-mix.
+  |
+  */
+-const proxy = 'http://localhost/devportal/web';
++const proxy = 'http://devportal.lndo.site';
+ const mix = require('laravel-mix');
+ 
+ /*
